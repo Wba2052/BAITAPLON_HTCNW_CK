@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giỏ hàng</title>
+        <link rel="stylesheet" href="../css/bs_css/bootstrap.min.css">
+        <script src="../js/bs_js/jquery-3.7.1.min.js"></script>
+        <script src="../js/bs_js/bootstrap.bundle.js"></script>
+        <script src="../js/bs_js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="../js/gioHang.js"></script>
+        <style>
+        .cart-item {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .cart-item p {
+            margin: 0;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!------------------------------------Header-------------------------------------------->
+            <div class="row" id="myHeader">
+                <div class="col-3">
+                    <a href="../html/index.html"><img src="../img/pngtree-tv-logo-tv-electronic-design-vector-png-image_39933394.png"
+                            style="margin-left: 30px;" width height="100px"
+                            alt></a>
+                </div>
+                <div class="col-4">
+                    <div class="timKiemHeader">
+                        <input type="text" class="form-control" id="txtTimKiem"
+                            placeholder="TÌM KIẾM SẢN PHẨM">
+                        <img src="../img/search-icon.png" id="timKiemSubmit"
+                            height="30px" alt>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="chucNangHeader">
+                            <a href="#" class="hostline">
+                                <img src="../img/hostline.png"
+                                    style="border: 1px solid blue; border-radius: 15px;"
+                                    height="80px" alt>
+                            </a>
+                            <a href="../html/gioHang.html">
+                                <img src="../img/shopping-icon.png"
+                                    height="50px"
+                                    alt>
+                            </a>
+
+                            <a href="../html/dangNhap.html"><img
+                                    src="../img/icon_login.png" height="50px"
+                                    alt></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------Menu-------------------------------------------->
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul
+                            class="navbar-nav navbar-expand navbar-collapse nav-fill d-flex flex-row"
+                            id="menu">
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/index.html">TRANG CHỦ</a></li>
+                            <li class="nav-item dropdown"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/index.html">SẢN PHẨM</a>
+                                <ul class="sub-menu justify-content-center"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a
+                                        href="../html/SamSung.html">SamSung</a></li>
+                                    <li><a
+                                        href="../html/Xiaomi.html">Xiaomi</a></li>
+                                    <li><a
+                                        href="../html/Casper.html">Casper</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/khuyenMai.html">KHUYẾN
+                                    MÃI</a></li>
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/tintuc.html">TIN TỨC</a></li>
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/gioiThieuTrangWeb.html">GIỚI
+                                    THIỆU</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!----------------------------content---------------------------------------------->
+            <div class="row">
+                <div id="cartItems" class="cart-items">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"> 
+                    Tổng tiền: <span id="tongTien"></span>
+                </div>
+            </div>
+            <div class="row">
+                 <button type="button" id="xoaGioHang"
+                        class="btn btn-danger">Xóa giỏ hàng</button>
+                <button type="button" id="datHang"
+                        class="btn btn-success">Đặt hàng</button></div>
+            <!----------------------------footer---------------------------------------------->
+            <footer>
+                <div class="row">
+                    <div class="border  border-primary"></div>
+                    <div class="col-2 m-2">
+                        <h6>TV DIGITAL STORE</h6><br>
+                        <a href="../html/gioiThieuTrangWeb.html">Giới thiệu</a>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>CHÍNH SÁCH</h6><br>
+                        <p>Chính sách bảo hành</p>
+                        <p>Chính sách thanh toán</p>
+                        <p>Chính sách giao hàng</p>
+                        <p>Chính sách bảo mật</p>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>CHI NHÁNH</h6><br>
+                        <div class="footer-cn">
+                            Chi nhánh 1: <span>406 Cộng Hòa, Quận Tân
+                                Bình, TP Hồ Chí Minh</span><br>
+                            Chi nhánh 2: <span>Phan Bội Châu, P.Cam Thuận, TP.
+                                Cam Ranh</span><br>
+                        </div>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>TỔNG ĐÀI HỖ TRỢ</h6><br>
+                        <div class="footer-tdht">
+                            CSKH: <span>0354609867</span><br>
+                            Bảo hành: <span>0354609867</span><br>
+                            Email: <span>anhphu@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>CÁCH THỨC THANH TOÁN</h6><br>
+                        <img src="../img/footer-thanhtoan.png" alt>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

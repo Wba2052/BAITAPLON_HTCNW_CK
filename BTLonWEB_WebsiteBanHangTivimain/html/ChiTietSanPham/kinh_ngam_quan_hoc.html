@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kính ngắm quang học Ricoh GV-3 cho GR IIIx</title>
+        <link rel="stylesheet" href="../../css/bs_css/bootstrap.min.css">
+        <script src="../../js/bs_js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/bs_js/bootstrap.bundle.js"></script>
+        <script src="../../js/bs_js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../css/chiTietSanPham.css">
+        <script src="../../js/chiTietSanPham.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!------------------------------------Header-------------------------------------------->
+            <div class="row" id="myHeader">
+                <div class="col-3">
+                    <a href="../index.html"><img
+                            src="../../img/logo.png"
+                            style="margin-left: 30px;" width height="100px"
+                            alt></a>
+                </div>
+                <div class="col-4">
+                    <div class="timKiemHeader">
+                        <input type="text" class="form-control" id="txtTimKiem"
+                            placeholder="TÌM KIẾM SẢN PHẨM">
+                        <img src="../../img/search-icon.png" id="timKiemSubmit"
+                            height="30px" alt>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="chucNangHeader">
+                            <a href="#" class="hostline">
+                                <img src="../../img/hostline.png"
+                                    style="border: 1px solid blue; border-radius: 15px;"
+                                    height="80px" alt>
+                            </a>
+                            <a href="../gioHang.html">
+                                <img src="../../img/shopping-icon.png" height="50px"
+                                                                alt>
+                            </a>
+                            
+                            <a href="../../html/dangNhap.html"><img
+                                    src="../../img/icon_login.png" height="50px"
+                                    alt></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------Menu-------------------------------------------->
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul
+                            class="navbar-nav navbar-expand navbar-collapse nav-fill d-flex flex-row"
+                            id="menu">
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../index.html">TRANG CHỦ</a></li>
+                            <li class="nav-item dropdown"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../index.html">SẢN PHẨM</a>
+                                <ul class="sub-menu justify-content-center"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a
+                                            href="../List_Filter.html">Filter</a></li>
+                                    <li><a
+                                            href="../List_Tripod_Gimbal.html">Tripod
+                                            -
+                                            Gimbal</a></li>
+                                    <li><a
+                                            href="../List_Battery_grip.html">Battery
+                                            grip</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/khuyenMai.html">KHUYẾN
+                                    MÃI</a></li>
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/tintuc.html">TIN TỨC</a></li>
+                            <li class="nav-item"><a
+                                    class="nav-link font-weight-bold text-white"
+                                    href="../html/gioiThieuTrangWeb.html">GIỚI
+                                    THIỆU</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!----------------------------content---------------------------------------------->
+            <div class="content">
+                <h1 style="color: rgb(13, 168, 224); margin: 20px;" id="tenSP">Kính ngắm quang học Ricoh GV-3 cho GR IIIx</h1>
+                <div class="row mt-3">
+                    <div class="col-4" id="content-chitietsp-left">
+                        <img src="../../img/product5.png" id="hinhAnhSP" height="350px"
+                            width="100%" alt>
+                    </div>
+                    <div class="col-5" id="content-chitietsp-center">
+                        <div class="row">
+                            <span class="fs-2 text-dark fw-bold"
+                                id="giaBan">7.200.000</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 m-2">
+                                <img src="../../img/muaHang.png" id="themVaoGioHang" width="100%"
+                                    height="50px" alt>
+                            </div>
+                            <div class="col-3 m-2">
+                                <a href="#"> <img src="../../img/muaNhanh.png"
+                                        width="100%" height="50px" alt
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#myModal"></a>
+                            </div>
+                        </div>
+                        <!------------------modalmuanhanh---------->
+                        <div class="modal fade" id="myModal" tabindex="-1"
+                            aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"
+                                            id="myModalLabel">Mua nhanh</h5>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="txtHoTen" placeholder="Họ và tên">
+                                            <label for="txtHoTen">Họ và tên</label>
+                                            <span id="error-message-hoTen"></span>
+                                        </div>
+                    
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="txtDienThoai"  placeholder="Số điện thoại">
+                                            <label for="txtDienThoai">Số điện thoại</label>
+                                            <span id="error-message-sdt"></span>
+                                        </div>
+
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="txtDiaChi"  placeholder="Số điện thoại">
+                                            <label for="txtDiaChi">Địa chỉ</label>
+                                            <span id="error-message-sdt"></span>
+                                        </div>
+
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                                        aria-label="Close">Mua</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row col-6 mt-2">
+                            <img src="../../img/muaNgayTS.png"
+                                style="padding: 0;" width="500px" alt>
+                        </div>
+                        <span><br>- Gimbal hỗ trợ ghi hình chiều dọc nguyên bản
+                            thế hệ thứ 2 <br>
+                            - Tải trọng đến 4.5kg với trục nghiêng mở rộng <br>
+                            - Màn hình cảm ứng OLED có khóa tự động <br>
+                            - Cần điều khiển hoặc chuyển đổi chế độ
+                            Bluetooth<br>
+                            - Cần gạt chế độ joystick dùng cho điều khiển
+                            gimbal/zoom<br>
+                            - Các tay trục phủ Teflon cho khả năng cân bằng mượt
+                            mà hơn<br>
+                            - Cổng giao tiếp RSA đáp ứng hệ sinh thái điều khiển
+                            mở rộng<br>
+                            - Báng pin dung lượng cao cung cấp thời gian hoạt
+                            động gấp khoảng 2,5 lần<br>
+                            - Thời gian hoạt động đến 12 giờ<br>
+                            - Kích thước: 416 x 223 x 202 mm<br>
+                            - Kích thước khi gấp gọn: 283 x 271 x 75 mm<br>
+                            - Trọng lượng: 1.24kg</span>
+                    </div>
+                    <div class="col-3" id="content-chitietsp-right">
+                        <div class="row">
+                            <span class="fw-bold" id="title_content_right">Tình
+                                trạng sản
+                                phẩm</span>
+                            <ul class="tinhTrangSP mt-3">
+                                <li>Sản phẩm mới 100%</li>
+                                <li>Chính hãng DJI</li>
+                                <li>Giá đã bao gồm VAT</li>
+                                <li>Bảo hành 12 tháng</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <span class="fw-bold"
+                                id="title_content_right">Chuyên gia tư vấn
+                            </span>
+                            <ul class="chuyenGiaTuVan mt-3">
+                                <li><span>0922 022 022</span> Hotline HCM</li>
+                                <li><span>0922 882 662</span> Hotline HN</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <span class="fw-bold" id="title_content_right">Hỗ
+                                trợ trả góp
+                            </span>
+                            <img src="../../img/hoTroTG.png" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-------------buttonModal-->
+            <div class="row">
+                <div class="thongTinSp m-3">
+                    <button type="button" class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#leftModal">Mô tả</button>
+
+                    <button type="button" class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#rightModal">Sản phẩm bao gồm</button>
+
+                </div>
+            </div>
+
+            <!-- Modal mo ta -->
+            <div class="modal fade" id="leftModal" tabindex="-1"
+                aria-labelledby="leftModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="leftModalLabel">Mô
+                                tả</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 style="text-align: center;">Ngàm Viltrox EF-EOS M2</h1>
+                            <p>
+                                Gimbal DJI RS 4 Pro tích hợp hoàn hảo với hệ
+                                thống điều khiển ống kính DJI Focus Pro, DJI
+                                Transmission và hệ sinh thái điều khiển mở rộng.
+                                Sức mạnh tổng hợp này mang lại cho ngành công
+                                nghiệp điện ảnh và truyền hình một giải pháp sản
+                                xuất toàn diện giúp kết hợp ổn định, truyền tải,
+                                giám sát, tập trung và kiểm soát. Dòng gimbal RS
+                                4 Pro mở rộng tầm nhìn về khả năng sáng tạo, cho
+                                phép các nhà quay phim khai thác hết tiềm năng
+                                và thể hiện kỹ năng của họ.
+                            </p>
+                            <img src="../../img/mota1.png" width="100%" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="rightModal" tabindex="-1"
+                aria-labelledby="rightModalLabel" aria-hidden="true">
+                <div
+                    class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"
+                                id="rightModalLabel">Sản phẩm bao gồm</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Gimbal × 1
+                                BG30 Battery Grip × 1 <br>
+                                Quick-Release Plate (Arca-Swiss/Manfrotto) ×
+                                1<br>
+                                Extended Grip/Tripod (Metal) × 1<br>
+                                Briefcase Handle × 1<br>
+                                Lens-Fastening Support (Extended) × 1<br>
+                                Multi-Camera Control Cable (USB-C, 30 cm) ×
+                                2<br>
+                                USB-C Charging Cable (40 cm) × 1<br>
+                                Screw Kit × 1<br>
+                                Carrying Case × 1<br>
+                                DJI Logo Sticker × 1<br>
+                                USB-C Power Cable (20 cm) × 1<br>
+                                Mini-HDMI to Mini-HDMI Cable (20 cm) × 1<br>
+                                Mini-HDMI to HDMI Cable (20 cm) × 1<br>
+                                Mini-HDMI to Micro-HDMI Cable (20 cm) × 1<br>
+                                Ronin Image Transmitter × 1<br>
+                                Focus Pro Motor × 1<br>
+                                FIZ Sticker × 1<br>
+                                Focus Pro Motor Rod Mount Kit × 1<br>
+                                Focus Gear Strip × 1<br>
+                                Lower Quick-Release Plate (Extended) × 1<br>
+                                Phone Holder × 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------------footer---------------------------------------------->
+            <footer>
+                <div class="row">
+                    <div class="border  border-primary"></div>
+                    <div class="col-2 m-2">
+                        <h6>VỀ GIA NGUYEN STORE</h6><br>
+                        <a href="../../html/gioiThieuTrangWeb.html">Giới
+                            thiệu</a>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>CHÍNH SÁCH</h6><br>
+                        <p>Chính sách bảo hành</p>
+                        <p>Chính sách thanh toán</p>
+                        <p>Chính sách giao hàng</p>
+                        <p>Chính sách bảo mật</p>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>CHI NHÁNH</h6><br>
+                        <div class="footer-cn">
+                            Chi nhánh 1: <span>406 Cộng Hòa, Quận Tân
+                                Bình</span><br>
+                            Chi nhánh 2: <span>Phan Bội Châu, P.Cam Thuận, TP.
+                                Cam Ranh</span><br>
+                        </div>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>TỔNG ĐÀI HỖ TRỢ</h6><br>
+                        <div class="footer-tdht">
+                            CSKH: <span>0354609867</span><br>
+                            Bảo hành: <span>0354609867</span><br>
+                            Email: <span>nguyenquynhgia@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-2 m-2">
+                        <h6>CÁCH THỨC THANH TOÁN</h6><br>
+                        <img src="../../img/footer-thanhtoan.png" alt>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

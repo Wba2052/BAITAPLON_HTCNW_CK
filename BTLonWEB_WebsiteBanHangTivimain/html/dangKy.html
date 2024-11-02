@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link href="../css/bs_css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bs_js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bs_js/bootstrap.bundle.js"></script>
+    <script src="../js/bs_js/bootstrap.min.js"></script>
+    <link href="../css/dangKy.css" rel="stylesheet">
+    <script src="../js/dangKy.js"></script>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="row col-12"></div>
+        <form action="" id="forml" >
+            <div class="form-group">
+                <h1 class="fw-bold" style="position: relative;"><a href="../html/index.html"><img src="../img/iconHome.png" alt="" style="position: absolute; left: 0px;" height="50px"></a>ĐĂNG KÝ TÀI KHOẢN</h1>
+                    <div class="form-floating ">
+                        <input type="text" class="form-control" id="txtHoTen" onchange="return kiemTraHoTen()" onblur="return kiemTraHoTen()" placeholder="Họ và tên">
+                        <label for="txtHoTen">Họ và tên</label>
+                        <span id="error-message-hoTen"></span>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="txtDienThoai" onchange="return kiemTraDienThoai()" onblur="return kiemTraDienThoai()" placeholder="Số điện thoại">
+                        <label for="txtDienThoai">Số điện thoại</label>
+                        <span id="error-message-sdt"></span>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="txtTenDangNhap" onchange="return kiemTraTenDN()" onblur="return kiemTraTenDN()" placeholder="Tên đăng nhập">
+                        <label for="txtTenDangNhap">Tên đăng nhập</label>
+                        <span id="error-message-tdn"></span>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="txtMatKhau" onchange="return kiemTraPassWord()" onblur="return kiemTraPassWord()" placeholder="Mật khẩu">
+                        <label for="txtMatKhau">Mật khẩu</label>
+                        <span id="error-message-mk"></span>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="txtXacNhanMK"  onchange="return kiemTraXacNhanPassWord()" onblur="return kiemTraXacNhanPassWord()" placeholder="Xác nhận mật khẩu">
+                        <label for="txtXacNhanMK">Nhập lại mật khẩu</label>
+                        <span id="error-message-xnmk"></span>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="txtEmail" onchange="return kiemTraEmail()" onblur="return kiemTraEmail()" placeholder="Email">
+                        <label for="txtEmail">Emai</label>
+                        <span id="error-message-email"></span>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="return luuThongTinDangKy()" id="btnDangNhap">Đăng ký</button>
+                    <a href="../html/dangNhap.html" style="float: right;">Quay lại trang đăng nhập</a>
+                </div>
+               
+        </form>
+    </div>
+    <img src="../img/backgroudLogin.png" height="1100px" width="100%" alt="">
+</body>
+</html>

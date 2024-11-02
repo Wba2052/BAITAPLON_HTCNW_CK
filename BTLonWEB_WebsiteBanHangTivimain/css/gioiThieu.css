@@ -1,0 +1,220 @@
+[class *=col-]{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -------------------------------------header ------------------------------------------------*/
+#myHeader {
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.059);
+    z-index: 999;
+}
+
+.timKiemHeader {
+    position: relative;
+}
+.timKiemHeader{
+    margin-top: 30px;
+}
+
+.timKiemHeader input[type="text"] {
+    padding-right: 40px;
+    font-size: 20px;
+    padding: 10px; 
+}
+
+.timKiemHeader img#timKiemSubmit {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.chucNangHeader img:hover {
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+}
+
+.chucNangHeader img{
+    margin: 20px 20px 0px;
+}
+
+
+
+/* -------------------------------------footer ------------------------------------------------*/
+.footer-tdht{
+    width: 80%;
+}
+
+.footer-tdht span{
+    color: #1982F9;
+    font-weight: 600; 
+    float: right;
+}
+
+.footer-cn span{
+    color: #1982F9;
+    font-weight: 600; 
+}
+
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/*-----------------------menu------------------------*/
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #0e2238;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.navbar-nav{
+    margin-top: 20px;
+    background-color: #338ef5;
+    
+}
+
+.navbar-nav li{
+    padding: 10px;
+}
+
+.navbar-nav li:hover{
+    background-color: #5ca8ff;
+}
+
+#menu{
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #5ca8ff;
+    top: 100%;
+    left: 0;
+    padding: 0; 
+   
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu li:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin-bottom: 1px;
+}
+
+
+.sub-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    left: 0px;
+}
+
+.sub-menu li a:hover {
+    background-color: #93c5ff;
+    color: #000;
+}
+
+/* -------------------------------------content ------------------------------------------------*/
+.gioiThieu{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 60%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: red;
+    font-style: italic;
+    font-size: x-large;
+}
+
+@keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+h1{
+    font-size: 30px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: blue;
+}
+
+.gioiThieu b{
+    float: right;
+}
